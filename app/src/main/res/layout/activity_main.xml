@@ -6,13 +6,44 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="FRUTTA"
+        app:titleMarginStart="170dp"
+        app:titleTextColor="#E31B0D"
+        android:background="#ABF39F"
+        >
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/immagine"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/frutta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintVertical_bias="0.189">
+    </ImageView>
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/immagine"
+        app:layout_constraintVertical_bias="0.355"
+        android:text="Frutta del giorno"
+        android:backgroundTint="#ABF39F"
+        android:textColor="#E31B0D"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
